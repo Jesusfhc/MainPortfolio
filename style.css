@@ -1,0 +1,52 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: "Unica One", cursive, sans-serif;
+        overflow: hidden;
+         background:
+        radial-gradient(circle at 15% 8%, rgba(255,255,255,0.12), transparent 28%),
+        radial-gradient(circle at 85% 18%, rgba(255,255,255,0.08), transparent 24%),
+        linear-gradient(135deg, #050505 0%, #111111 48%, #000000 100%);
+        color: #f4f1ea;
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+
+}
+
+a {
+    text-decoration: none;
+    color: #f4f1ea;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 60px 30px;
+}
+
+
