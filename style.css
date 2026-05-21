@@ -48,12 +48,12 @@ a {
 
 main {
     width: 100%;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 40px;
-    padding-top: 80px;
+    padding-top: 4px;
 }
 
 .hero {
@@ -173,4 +173,5 @@ main {
     padding: 20px;
     border-radius: 10px;
     width: 120px;
+    gap: 10px;
 }
