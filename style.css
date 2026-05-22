@@ -12,6 +12,7 @@ body {
         radial-gradient(circle at 85% 18%, rgba(255,255,255,0.08), transparent 24%),
         linear-gradient(135deg, #050505 0%, #111111 48%, #000000 100%);
         color: #f4f1ea;
+        width: 100%;
 }
 
 nav {
@@ -50,6 +51,7 @@ main {
     width: 100%;
     min-height: calc(100vh - 70px);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px 40px;
@@ -62,6 +64,7 @@ main {
     gap: 20px;
     align-items: center;
     padding: 60px 30px;
+    width: 100%;
 }
 
 .pre-title {
@@ -133,7 +136,7 @@ main {
     align-items: center;
     gap: 20px;
     height: 100%;
-    background-color: rgba(143, 138, 128, 0.467);
+    background-color: rgba(20, 20, 20, 0.8);
     border: #f4f1ea 2px solid;
     border-top-left-radius: 44px;
     border-top-right-radius: 44px;
@@ -174,4 +177,98 @@ main {
     border-radius: 10px;
     width: 120px;
     gap: 10px;
+}
+
+.about-me {
+    font-size: 1.2rem;
+    color: #f4f1ea;
+    text-align: left;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-left h2 {
+    font-size: 2rem;
+    color: #f4f1ea;
+}
+
+.about-left p {
+    font-size: 1rem;
+    color: #f4f1ea;
+    line-height: 30px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 40px;
+    border: #f4f1ea 2px solid;
+    border-radius: 10px;
+}
+
+.about-items {
+    display: flex;
+     gap: 20px;
+     justify-content: center;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
+    gap: 10px;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     padding: 10px 30px;
+     width: 100%;
+     margin-top: 50px;
+}
+
+.resume h2 {
+    font-size: 2rem;
+    color: #f4f1ea;
+}
+
+.resume-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+     gap: 20px;
+     justify-items: center;
+     width: 100%;
+}
+
+.resume-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
 }
