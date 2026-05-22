@@ -272,3 +272,135 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 30px;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+     justify-content: center;
+     align-items: left;
+     padding: 10px 30px;
+     width: 100%;
+     margin-top: 50px;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: #f4f1ea;
+}
+
+.projects-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     gap: 20px;
+     justify-items: center;
+     width: 100%;
+}
+
+.project-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #f4f1ea;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #f4f1ea;
+}
+
+.project-item a {
+    font-size: 1rem;
+    background-color: #f4f1ea;
+    color: #111111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute;
+     bottom: 20px;
+}
+
+.project-item a:hover {
+    background-color: #08070a;
+    color: #f4f1ea;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     padding: 10px 30px;
+     width: 100%;
+     margin-top: 50px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #f4f1ea;
+}
+
+.contact-items {
+    display: flex;
+     gap: 20px;
+     justify-content: center;
+    
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .title-description {
+        max-width: 100%;
+    }
+
+    .profile-zone {
+        border-radius: 0;
+    }
+
+    .about-me {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-items {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-items {
+        grid-template-columns: 1fr;
+    }
+}
