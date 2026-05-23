@@ -375,14 +375,27 @@ main {
 }
 
 @media (max-width: 768px) {
+
+    main {
+        padding: 20px;
+    }
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 30px 10px;
     }
 
     .main-title {
         font-size: 3rem;
+        text-align: center;
     }
+
+    .main-img {
+        width: 80%; 
+        max-width: 280px; 
+        height: auto; 
+    }
+    
 
     .title-description {
         max-width: 100%;
@@ -390,10 +403,12 @@ main {
 
     .profile-zone {
         border-radius: 0;
+        padding-bottom: 20px;
     }
 
     .about-me {
         grid-template-columns: 1fr;
+        padding: 20px 10px;
     }
 
     .resume-items {
@@ -402,5 +417,12 @@ main {
 
     .projects-items {
         grid-template-columns: 1fr;
+    }
+
+    .profile-items, .about-items, .contact-items {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
     }
 }
